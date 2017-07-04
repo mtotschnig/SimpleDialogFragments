@@ -16,7 +16,6 @@
 
 package eltos.simpledialogfragment.list;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.DimenRes;
@@ -338,9 +337,10 @@ public abstract class CustomListDialog<This extends CustomListDialog<This>>
         if (mListView instanceof ListView){
             // for pre api11
             ((ListView) mListView).setAdapter(mAdapter);
-        } else {
-            mListView.setAdapter(mAdapter);
+        } else if (mListView instanceof GridView) {
+            ((GridView) mListView).setAdapter(mAdapter);
         }
+
         mListView.setEmptyView(emptyView);
 
         switch (getArguments().getInt(CHOICE_MODE, ListView.CHOICE_MODE_NONE)) {
