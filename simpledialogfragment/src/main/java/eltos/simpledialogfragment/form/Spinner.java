@@ -26,13 +26,10 @@ import eltos.simpledialogfragment.SimpleDialog.OnDialogResultListener;
 
 
 /**
- * A spinner form element to be used with {@link SimpleFormDialog}
- * </p>
- * This is an Spinner that can be used to give a choice between different values.
- * </p>
- * This will add an int to resource bundle containing the index of the chosen value
- * within the supplied item list or -1 if none was chosen.
- * </p>
+ * <p>A spinner form element to be used with {@link SimpleFormDialog}</p>
+ * <p>This is an Spinner that can be used to give a choice between different values.</p>
+ * <p>This will add an int to resource bundle containing the index of the chosen value
+ * within the supplied item list or -1 if none was chosen.</p>
  * Created by philipp on 23.02.17.
  */
 

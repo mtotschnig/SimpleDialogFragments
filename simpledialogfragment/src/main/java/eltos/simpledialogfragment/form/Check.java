@@ -25,12 +25,9 @@ import android.support.annotation.StringRes;
 import eltos.simpledialogfragment.SimpleDialog.OnDialogResultListener;
 
 /**
- * An checkbox form element to be used with {@link SimpleFormDialog}
- * </p>
- * This is a CheckBox - what else?
- * </p>
- * This will add a Boolean to resource bundle containing the checked state.
- * </p>
+ * <p>An checkbox form element to be used with {@link SimpleFormDialog}</p>
+ * <p>This is a CheckBox - what else?</p>
+ * <p>This will add a Boolean to resource bundle containing the checked state.</p>
  * Created by eltos on 21.02.17.
  */
 
