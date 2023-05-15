@@ -39,6 +39,8 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 /**
  * An easy to use and extendable dialog fragment that displays a text message.
  * This is the base class of all dialogs in this library.
@@ -504,11 +506,11 @@ public class SimpleDialog<This extends SimpleDialog<This>> extends DialogFragmen
             }
         }
         if (theme != null) {
-            dialog = new AlertDialog.Builder(getContext(), theme).create();
+            dialog = new MaterialAlertDialogBuilder(getContext(), theme).create();
             setStyle(STYLE_NORMAL, theme);
         } else {
             // default theme or 'alertDialogTheme'
-            dialog = new AlertDialog.Builder(getContext()).create();
+            dialog = new MaterialAlertDialogBuilder(getContext()).create();
         }
 
         context = dialog.getContext();
